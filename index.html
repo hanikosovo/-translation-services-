@@ -1,0 +1,693 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<meta name="color-scheme" content="light dark" />
+<link rel="icon" href="data:," />
+<title>Translation Services — Hany Karahjoly | EN ↔ AR Medical Translation & CV Writing</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,500;6..72,600;6..72,700&family=Public+Sans:wght@400;500;600;700;800&family=Noto+Naskh+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#fcfcfa; --surface:#ffffff; --surface-2:#eef3f0; --surface-3:#e6efe9;
+  --ink:#131e1a; --ink-2:#3d4a45; --muted:#6b7a74; --line:#dde5e0;
+  --accent:#0b6b4f; --accent-2:#084f3a; --accent-soft:#dff2e9;
+  --gold:#b7791f; --gold-soft:#fdf0d3;
+  --radius:18px;
+  --shadow:0 12px 32px rgba(11,107,79,.10), 0 2px 8px rgba(0,0,0,.06);
+}
+@media (prefers-color-scheme: dark){
+  :root{
+    --bg:#0d1311; --surface:#151d1a; --surface-2:#1a2521; --surface-3:#21302a;
+    --ink:#eef3f0; --ink-2:#c8d3ce; --muted:#96a8a0; --line:#26332e;
+    --accent:#3ec79a; --accent-2:#7fe3bf; --accent-soft:#17382c;
+    --gold:#e9b44c; --gold-soft:#2e2410;
+    --shadow:0 12px 32px rgba(0,0,0,.35);
+  }
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:"Public Sans",system-ui,sans-serif;background:var(--bg);color:var(--ink);line-height:1.6}
+a{color:var(--accent);text-decoration:none}
+button,[role="button"],select,summary,input,textarea{font:inherit}
+button,select,input,textarea{ min-height:44px; }
+.ar{font-family:"Noto Naskh Arabic",serif;direction:rtl}
+.wrap{max-width:1120px;margin:0 auto;padding:0 20px}
+.topnav{position:sticky;top:0;z-index:20;background:color-mix(in srgb, var(--bg) 92%, transparent);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.topnav-inner{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:14px 0}
+.brand{font-weight:800;letter-spacing:-.02em;color:var(--ink);font-size:15px;line-height:1.1}
+.brand span{display:block;font-weight:500;font-size:12px;color:var(--muted);letter-spacing:.02em;margin-top:2px}
+.navlinks{display:flex;gap:4px;flex-wrap:wrap;justify-content:flex-end}
+.navlinks a{color:var(--ink-2);font-size:13.5px;font-weight:600;padding:10px 12px;border-radius:999px}
+.navlinks a:hover{background:var(--surface-2);color:var(--ink)}
+.nav-cta{background:var(--accent)!important;color:#fff!important}
+@media(prefers-color-scheme:dark){.nav-cta{color:#0d1311!important}}
+@media(max-width:700px){.navlinks a:not(.nav-cta){display:none}}
+
+.hero{padding:52px 0 36px}
+.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:28px;align-items:start}
+@media(max-width:860px){.hero-grid{grid-template-columns:1fr}}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;background:var(--accent-soft);color:var(--accent-2);font-size:12.5px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;padding:7px 12px;border-radius:999px}
+@media(prefers-color-scheme:dark){.eyebrow{color:var(--accent-2)}}
+h1{font-family:"Newsreader",serif;font-size:clamp(38px,6vw,62px);line-height:.95;letter-spacing:-.02em;margin:18px 0 16px;font-weight:700}
+h1 em{font-style:italic;color:var(--accent)}
+.lede{font-size:18px;line-height:1.65;color:var(--ink-2);max-width:580px;margin:0}
+.hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:24px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:13px 20px;border-radius:999px;font-weight:700;font-size:15px;border:1px solid transparent;cursor:pointer;min-height:48px}
+.btn-primary{background:var(--accent);color:#fff}
+@media(prefers-color-scheme:dark){.btn-primary{color:#0d1311}}
+.btn-secondary{background:var(--surface);color:var(--ink);border-color:var(--line)}
+.trust{display:flex;flex-wrap:wrap;gap:8px;margin-top:22px}
+.trust span{font-size:12.5px;font-weight:600;background:var(--surface);border:1px solid var(--line);padding:7px 10px;border-radius:999px;color:var(--ink-2)}
+
+/* Document card */
+.doc-card{background:var(--surface);border:1px solid var(--line);border-radius:20px;box-shadow:var(--shadow);overflow:hidden}
+.doc-head{display:flex;justify-content:space-between;align-items:center;padding:14px 18px;border-bottom:1px solid var(--line);background:var(--surface-2)}
+.doc-head strong{font-size:13px;letter-spacing:.05em;text-transform:uppercase}
+.doc-head span{font-size:12px;font-weight:700;background:var(--gold-soft);color:var(--gold);padding:5px 8px;border-radius:999px}
+.doc-body{padding:18px}
+.doc-body label{font-size:11px;letter-spacing:.08em;text-transform:uppercase;font-weight:800;color:var(--muted)}
+.doc-en{font-size:15.5px;line-height:1.6;margin:6px 0 16px}
+.doc-ar{font-size:19px;line-height:1.9;margin:6px 0 0;text-align:right}
+.doc-meta{display:grid;grid-template-columns:1fr 1fr 1fr;border-top:1px solid var(--line)}
+.doc-meta div{padding:12px 14px;border-right:1px solid var(--line)}
+.doc-meta div:last-child{border-right:0}
+.doc-meta b{display:block;font-size:18px;line-height:1}
+.doc-meta span{font-size:11.5px;color:var(--muted);font-weight:600}
+
+section{padding:44px 0}
+.sec-head{max-width:720px;margin-bottom:22px}
+.sec-head h2{font-family:"Newsreader",serif;font-size:clamp(30px,4vw,42px);line-height:1.05;letter-spacing:-.02em;margin:0 0 10px}
+.sec-head p{color:var(--ink-2);margin:0;font-size:16.5px}
+.kicker{font-size:12px;letter-spacing:.09em;text-transform:uppercase;font-weight:800;color:var(--accent);margin-bottom:10px}
+
+.services{display:grid;grid-template-columns:1.2fr .8fr;gap:16px}
+@media(max-width:800px){.services{grid-template-columns:1fr}}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:22px}
+.card.featured{background:var(--accent);color:#fff;border-color:transparent}
+@media(prefers-color-scheme:dark){.card.featured{background:#17382c;color:var(--ink)}}
+.card h3{margin:0 0 8px;font-size:19px;line-height:1.25}
+.card p{margin:0;color:var(--ink-2);font-size:15px}
+.card.featured p{color:rgba(255,255,255,.88)}
+@media(prefers-color-scheme:dark){.card.featured p{color:var(--ink-2)}}
+.card ul{margin:14px 0 0;padding:0;list-style:none;display:grid;gap:8px}
+.card li{font-size:14.5px;display:flex;gap:9px;align-items:flex-start}
+.card li::before{content:"✓";font-weight:800;color:var(--accent);flex-shrink:0}
+.card.featured li::before{color:#ffe08a}
+.price-line{margin-top:16px;padding-top:14px;border-top:1px solid var(--line);display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
+.card.featured .price-line{border-color:rgba(255,255,255,.25)}
+.price-line strong{font-size:16px}
+.price-line span{font-size:13px;color:var(--muted)}
+.card.featured .price-line span{color:rgba(255,255,255,.75)}
+.stack{display:grid;gap:16px}
+
+/* Calculator */
+.calc{background:var(--surface);border:1px solid var(--line);border-radius:22px;overflow:hidden;display:grid;grid-template-columns:1.1fr .9fr}
+@media(max-width:820px){.calc{grid-template-columns:1fr}}
+.calc-left{padding:24px}
+.calc-right{background:var(--surface-2);padding:24px;border-left:1px solid var(--line);display:flex;flex-direction:column}
+@media(max-width:820px){.calc-right{border-left:0;border-top:1px solid var(--line)}}
+.field{margin-bottom:16px}
+.field label{display:block;font-size:13px;font-weight:700;margin-bottom:7px}
+.field select,.field input[type="number"],.field input[type="text"],.field input[type="email"],.field textarea{width:100%;padding:12px 13px;border-radius:12px;border:1px solid var(--line);background:var(--surface);color:var(--ink)}
+.segments{display:flex;gap:8px;flex-wrap:wrap}
+.seg{flex:1;min-width:100px;padding:11px 10px;border-radius:12px;border:1px solid var(--line);background:var(--surface);font-weight:700;font-size:13.5px;cursor:pointer;text-align:center}
+.seg.active{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+input[type="range"]{width:100%;accent-color:var(--accent)}
+.range-row{display:flex;justify-content:space-between;font-size:13px;color:var(--muted);font-weight:600}
+.estimate-big{font-family:"Newsreader",serif;font-size:52px;line-height:1;letter-spacing:-.03em}
+.estimate-note{font-size:13.5px;color:var(--muted);line-height:1.6}
+.breakdown{margin:16px 0;padding:14px;background:var(--surface);border:1px solid var(--line);border-radius:14px;font-size:14px;display:grid;gap:7px}
+.breakdown div{display:flex;justify-content:space-between;gap:12px}
+
+/* Glossary */
+.table-wrap{overflow:hidden;border:1px solid var(--line);border-radius:18px;background:var(--surface)}
+table{width:100%;border-collapse:collapse;font-size:15px}
+th{text-align:left;font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);padding:13px 16px;background:var(--surface-2);border-bottom:1px solid var(--line)}
+td{padding:14px 16px;border-bottom:1px solid var(--line);vertical-align:top}
+tr:last-child td{border-bottom:0}
+td.ar-cell{font-size:17px;text-align:right;line-height:1.7}
+@media(max-width:640px){
+  table,thead,tbody,tr,td{display:block;width:100%}
+  thead{display:none}
+  tr{padding:12px 0;border-bottom:1px solid var(--line)}
+  td{border:0;padding:4px 16px}
+  td.ar-cell{text-align:right}
+}
+
+/* CV tiers */
+.tiers{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+@media(max-width:820px){.tiers{grid-template-columns:1fr}}
+.tier{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:22px;display:flex;flex-direction:column}
+.tier.pop{border:2px solid var(--accent);position:relative}
+.badge{position:absolute;top:-11px;left:18px;background:var(--accent);color:#fff;font-size:11px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;padding:5px 9px;border-radius:999px}
+@media(prefers-color-scheme:dark){.badge{color:#0d1311}}
+.tier h3{margin:4px 0 6px}
+.tier .amount{font-family:"Newsreader",serif;font-size:36px;line-height:1}
+.tier ul{list-style:none;padding:0;margin:16px 0;display:grid;gap:8px;font-size:14.5px;color:var(--ink-2)}
+.tier li::before{content:"—  ";color:var(--accent);font-weight:800}
+.tier .btn{margin-top:auto}
+
+/* Steps */
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+@media(max-width:820px){.steps{grid-template-columns:1fr 1fr}}
+@media(max-width:480px){.steps{grid-template-columns:1fr}}
+.step{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:18px}
+.step b{width:36px;height:36px;border-radius:50%;background:var(--accent-soft);color:var(--accent-2);display:grid;place-items:center;font-size:15px}
+.step h4{margin:12px 0 6px;font-size:16px}
+.step p{margin:0;font-size:14px;color:var(--ink-2)}
+
+/* About */
+.about{display:grid;grid-template-columns:.9fr 1.1fr;gap:20px;align-items:start}
+@media(max-width:820px){.about{grid-template-columns:1fr}}
+.timeline{display:grid;gap:0}
+.tl{display:grid;grid-template-columns:86px 1fr;gap:14px;padding:14px 0;border-bottom:1px solid var(--line)}
+.tl:last-child{border-bottom:0}
+.tl time{font-weight:800;font-size:13px;color:var(--accent)}
+.tl strong{display:block;font-size:15px}
+.tl span{font-size:14px;color:var(--ink-2)}
+
+/* Order */
+.order-grid{display:grid;grid-template-columns:1fr 380px;gap:16px;align-items:start}
+@media(max-width:860px){.order-grid{grid-template-columns:1fr}}
+.form-card{background:var(--surface);border:1px solid var(--line);border-radius:20px;padding:22px}
+.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+@media(max-width:600px){.form-grid{grid-template-columns:1fr}}
+.form-grid .full{grid-column:1/-1}
+textarea{min-height:110px;resize:vertical}
+.side-card{background:var(--ink);color:var(--bg);border-radius:20px;padding:22px}
+.side-card h3{margin-top:0}
+.side-card p,.side-card li{color:color-mix(in srgb, var(--bg) 82%, transparent);font-size:14.5px}
+.side-card a{color:var(--bg);text-decoration:underline;text-underline-offset:3px;word-break:break-all}
+.status{font-size:13.5px;font-weight:600;margin-top:10px;min-height:20px}
+
+details{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:4px 18px;margin-bottom:10px}
+summary{cursor:pointer;font-weight:700;padding:12px 0;min-height:44px;display:flex;align-items:center}
+details p{color:var(--ink-2);margin:0 0 14px;font-size:15px}
+.cv-doc{background:var(--surface);border:1px solid var(--line);border-radius:20px;padding:28px;box-shadow:var(--shadow)}
+.cv-doc h3{font-family:"Newsreader",serif;font-size:28px;margin:0 0 2px}
+.cv-doc h4{font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--accent);margin:22px 0 8px}
+.cv-doc p,.cv-doc li{font-size:14.5px;color:var(--ink-2)}
+.cv-doc ul{margin:6px 0;padding-left:18px;display:grid;gap:5px}
+.cv-tabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:16px}
+.cv-tab{padding:11px 16px;border-radius:999px;border:1px solid var(--line);background:var(--surface);font-weight:700;cursor:pointer}
+.cv-tab.active{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+footer{border-top:1px solid var(--line);padding:28px 0 40px;color:var(--muted);font-size:13.5px}
+.footer-flex{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+</style>
+</head>
+<body>
+<header class="topnav">
+  <div class="wrap topnav-inner">
+    <a class="brand" href="#top">Hany Karahjoly<span>EN ↔ AR Translation · CV &amp; Resume Writing</span></a>
+    <nav class="navlinks" aria-label="Sections">
+      <a href="#services">Services</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#samples">Samples</a>
+      <a href="#cv">CV &amp; Resumes</a>
+      <a href="#about">About</a>
+      <a href="#mycv">My CV</a>
+      <a class="nav-cta" href="#order">Request a quote →</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <!-- HERO -->
+  <div class="wrap hero">
+    <div class="hero-grid">
+      <div>
+        <span class="eyebrow">● Available for new projects</span>
+        <h1>Medical translation that reads like it was <em>written in Arabic first.</em></h1>
+        <p class="lede">I'm Hany — a pharmacist translating English ↔ Arabic for pharma, healthcare and humanitarian work, and building CVs that actually get shortlisted. Terminology checked by a pharmacist, not just a dictionary.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#order">Send a document for a quote</a>
+          <a class="btn btn-secondary" href="#cv">I need a CV / resume →</a>
+        </div>
+        <div class="trust">
+          <span>🎓 BPharm — Pharmacist</span>
+          <span>MSc Bioinformatics (2026)</span>
+          <span>Syrian Arab Red Crescent — IM Officer</span>
+          <span>📍 Damascus · Works remotely worldwide</span>
+        </div>
+      </div>
+
+      <div class="doc-card" aria-label="Sample translation preview">
+        <div class="doc-head"><strong>Sample — Patient Leaflet</strong><span>EN → AR</span></div>
+        <div class="doc-body">
+          <label>Original — English</label>
+          <p class="doc-en">“Do not exceed the recommended dose. If symptoms persist for more than 3 days, consult your doctor or pharmacist.”</p>
+          <label>Translation — العربية</label>
+          <p class="doc-ar ar" lang="ar">«لا تتجاوز الجرعة الموصى بها. إذا استمرت الأعراض لأكثر من ٣ أيام، استشر طبيبك أو الصيدلي.»</p>
+        </div>
+        <div class="doc-meta">
+          <div><b>3–4 days</b><span>Standard turnaround</span></div>
+          <div><b>2</b><span>Revision rounds included</span></div>
+          <div><b>100%</b><span>Human — no raw MT</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SERVICES -->
+  <section id="services"><div class="wrap">
+    <div class="sec-head">
+      <div class="kicker">What I do</div>
+      <h2>Two ways to hire me: translate it, or present you.</h2>
+      <p>Most clients come for one and stay for the other — a translated report, then a CV that matches it. Both are quoted before I start. No surprises.</p>
+    </div>
+    <div class="services">
+      <article class="card featured">
+        <h3>Medical &amp; Pharmaceutical Translation — EN ↔ AR</h3>
+        <p>My core work. Pharmacy degree + daily work with health and humanitarian data means drug names, doses and warnings are translated the way a clinician would write them.</p>
+        <ul>
+          <li>Patient information leaflets (PILs) &amp; Summaries of Product Characteristics (SmPC)</li>
+          <li>Clinical, pharmacy &amp; public-health documents</li>
+          <li>NGO / humanitarian reports — Protection, GBV, MHPSS, Legal Assistance, Livelihoods</li>
+          <li>Medical articles, presentations &amp; training materials</li>
+        </ul>
+        <div class="price-line"><strong>$0.10 / word</strong><span>Proofreading $0.05 / word</span></div>
+      </article>
+      <div class="stack">
+        <article class="card">
+          <h3>CV &amp; Resume Building</h3>
+          <p>ATS-friendly CVs in English, Arabic, or bilingual — written for NGO, UN, healthcare and pharma roles, based on 5+ years inside those hiring systems.</p>
+          <div class="price-line"><strong>From $25</strong><span>See packages below ↓</span></div>
+        </article>
+        <article class="card">
+          <h3>Proofreading &amp; Localisation</h3>
+          <p>Already translated? I polish Arabic or English medical text for accuracy, register and readability — and adapt it for Syrian / Levantine or Modern Standard Arabic audiences.</p>
+          <div class="price-line"><strong>$0.05 / word</strong><span>Same-day for short texts</span></div>
+        </article>
+      </div>
+    </div>
+  </div></section>
+
+  <!-- CALCULATOR -->
+  <section id="pricing" style="padding-top:8px"><div class="wrap">
+    <div class="sec-head">
+      <div class="kicker">Instant estimate</div>
+      <h2>Price it yourself — in 20 seconds.</h2>
+      <p>This is an estimate, not an invoice. Send the actual file and I'll confirm the exact quote — it never goes up after I've quoted it.</p>
+    </div>
+
+    <div class="calc">
+      <div class="calc-left">
+        <div class="field">
+          <label for="svc">Service</label>
+          <select id="svc">
+            <option value="medical">Medical / Pharma Translation — $0.10/word</option>
+            <option value="general">General / NGO Translation — $0.07/word</option>
+            <option value="proof">Proofreading &amp; Editing — $0.05/word</option>
+            <option value="cv-essential">CV — Essential package (flat)</option>
+            <option value="cv-pro">CV — Professional package (flat)</option>
+            <option value="cv-exec">CV — Professional + Cover Letter (flat)</option>
+          </select>
+        </div>
+        <div class="field" id="wordsField">
+          <label for="words">Word count — <span id="wordsLabel">1,000 words</span></label>
+          <input type="range" id="wordsRange" min="250" max="10000" step="250" value="1000">
+          <div class="range-row"><span>250</span><span>10,000+</span></div>
+          <input type="number" id="words" value="1000" min="0" step="50" style="margin-top:8px" aria-label="Exact word count">
+          <p style="font-size:12.5px;color:var(--muted);margin:6px 0 0">No word count? A standard page ≈ 250 words. Or just send the file in the form below.</p>
+        </div>
+        <div class="field">
+          <label>Turnaround</label>
+          <div class="segments" id="speedSeg">
+            <button type="button" class="seg active" data-mult="1">Standard<br><small style="font-weight:500">3–4 days</small></button>
+            <button type="button" class="seg" data-mult="1.3">Express +30%<br><small style="font-weight:500">24–48 hours</small></button>
+            <button type="button" class="seg" data-mult="0.9">Flexible −10%<br><small style="font-weight:500">7+ days</small></button>
+          </div>
+        </div>
+        <div class="field" style="margin-bottom:0">
+          <label>Direction</label>
+          <div class="segments" id="dirSeg">
+            <button type="button" class="seg active" data-dir="EN → AR">English → Arabic</button>
+            <button type="button" class="seg" data-dir="AR → EN">Arabic → English</button>
+            <button type="button" class="seg" data-dir="Bilingual">Bilingual / Both</button>
+          </div>
+        </div>
+      </div>
+      <div class="calc-right">
+        <span style="font-size:12px;letter-spacing:.08em;text-transform:uppercase;font-weight:800;color:var(--muted)">Your estimate</span>
+        <div class="estimate-big" id="total" style="margin:10px 0 4px">$100</div>
+        <p class="estimate-note" id="summary">Medical / Pharma Translation · 1,000 words · Standard · EN → AR</p>
+        <div class="breakdown">
+          <div><span>Base</span><strong id="baseLine">$100.00</strong></div>
+          <div><span>Turnaround adjustment</span><strong id="speedLine">—</strong></div>
+          <div><span>Minimum fee</span><strong>$15 on short jobs</strong></div>
+        </div>
+        <p class="estimate-note">Payment method is agreed before work starts — I'll confirm what works for your country when I reply. 50% to start on jobs over $100, balance on delivery.</p>
+        <a class="btn btn-primary" href="#order" id="useEstimate" style="margin-top:auto">Use this estimate in my request →</a>
+      </div>
+    </div>
+  </div></section>
+
+  <!-- SAMPLES / GLOSSARY -->
+  <section id="samples" style="padding-top:8px"><div class="wrap">
+    <div class="sec-head">
+      <div class="kicker">Terminology matters</div>
+      <h2>A pharmacist's termbase, not Google Translate.</h2>
+      <p>Consistent terminology is what separates a leaflet a regulator accepts from one that gets sent back. A sample from the glossary I work from:</p>
+    </div>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th style="width:28%">English term</th><th style="width:32%">Arabic — العربية</th><th>Note</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Active pharmaceutical ingredient</strong></td><td class="ar-cell ar" lang="ar">المادة الفعالة الدوائية</td><td style="color:var(--ink-2)">Not a literal “active element” — the regulatory term.</td></tr>
+          <tr><td><strong>Dosage regimen</strong></td><td class="ar-cell ar" lang="ar">نظام الجرعات</td><td style="color:var(--ink-2)">Dose + frequency + duration, as one concept.</td></tr>
+          <tr><td><strong>Contraindication</strong></td><td class="ar-cell ar" lang="ar">موانع الاستعمال</td><td style="color:var(--ink-2)">Plural form used on Syrian &amp; MENA leaflets.</td></tr>
+          <tr><td><strong>Adverse drug reaction</strong></td><td class="ar-cell ar" lang="ar">التفاعل الدوائي الضار</td><td style="color:var(--ink-2)">Kept distinct from “side effect” (أثر جانبي).</td></tr>
+          <tr><td><strong>Patient Information Leaflet</strong></td><td class="ar-cell ar" lang="ar">نشرة معلومات المريض</td><td style="color:var(--ink-2)">Plain-language register, short sentences.</td></tr>
+          <tr><td><strong>Shelf life / Expiry</strong></td><td class="ar-cell ar" lang="ar">مدة الصلاحية / تاريخ الانتهاء</td><td style="color:var(--ink-2)">Two different concepts — never merged.</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p style="font-size:13.5px;color:var(--muted);margin-top:12px">Full portfolio samples (leaflet, NGO report excerpt, bilingual CV) are sent on request with your quote — client documents are never published here.</p>
+  </div></section>
+
+  <!-- CV -->
+  <section id="cv" style="padding-top:8px"><div class="wrap">
+    <div class="sec-head">
+      <div class="kicker">CV &amp; Resume Writing</div>
+      <h2>A CV built by someone who reads them for a living.</h2>
+      <p>In my day job I work in reporting and information management for a humanitarian programme across 14 centres — I see what hiring managers scan for, and what makes them stop. I rebuild your CV around the job you want, not just the jobs you've had.</p>
+    </div>
+    <div class="tiers">
+      <article class="tier">
+        <h3>Essential</h3>
+        <div class="amount">$25</div>
+        <p style="color:var(--muted);font-size:14px;margin:4px 0 0">Clean-up of your existing CV</p>
+        <ul>
+          <li>ATS-friendly 1–2 page layout (Word + PDF)</li>
+          <li>Grammar, formatting &amp; consistency pass</li>
+          <li>English <em>or</em> Arabic</li>
+          <li>Delivery in 3 days · 1 revision</li>
+        </ul>
+        <a class="btn btn-secondary" href="#order" data-pick="CV — Essential ($25)">Choose Essential</a>
+      </article>
+      <article class="tier pop">
+        <span class="badge">Recommended</span>
+        <h3>Professional</h3>
+        <div class="amount">$40</div>
+        <p style="color:var(--muted);font-size:14px;margin:4px 0 0">Full rewrite, targeted to a role</p>
+        <ul>
+          <li>Everything in Essential</li>
+          <li>Full rewrite around 1 target job advert</li>
+          <li>Achievement bullets with numbers, not duties</li>
+          <li>Bilingual EN + AR versions included</li>
+          <li>Delivery in 3 days · 2 revisions</li>
+        </ul>
+        <a class="btn btn-primary" href="#order" data-pick="CV — Professional ($40)">Choose Professional</a>
+      </article>
+      <article class="tier">
+        <h3>Complete Application</h3>
+        <div class="amount">$55</div>
+        <p style="color:var(--muted);font-size:14px;margin:4px 0 0">CV + cover letter + LinkedIn</p>
+        <ul>
+          <li>Everything in Professional</li>
+          <li>Tailored cover letter (1 page)</li>
+          <li>LinkedIn headline + About section</li>
+          <li>Short interview-prep notes</li>
+          <li>Delivery in 4 days · 2 revisions</li>
+        </ul>
+        <a class="btn btn-secondary" href="#order" data-pick="CV — Complete Application ($55)">Choose Complete</a>
+      </article>
+    </div>
+    <p style="font-size:14px;color:var(--ink-2);margin-top:14px"><strong>To start:</strong> send your old CV (any format — even a photo of it) and, if you have one, the job advert you want. No old CV? Choose a package anyway and I'll send you a short questionnaire instead.</p>
+  </div></section>
+
+  <!-- PROCESS -->
+  <section style="padding-top:8px"><div class="wrap">
+    <div class="sec-head"><div class="kicker">How it works</div><h2>From file to finished — while you sleep.</h2></div>
+    <div class="steps">
+      <div class="step"><b>1</b><h4>You send it</h4><p>Use the form below any time — day or night. Attachments go by email after my reply.</p></div>
+      <div class="step"><b>2</b><h4>I quote it</h4><p>Exact price + delivery date within 24 hours. The quoted price is final.</p></div>
+      <div class="step"><b>3</b><h4>I translate / write</h4><p>Human translation or CV rewrite, terminology-checked, then proofread as a second pass.</p></div>
+      <div class="step"><b>4</b><h4>You review</h4><p>Delivered in Word + PDF with revision rounds included. You approve before final payment on larger jobs.</p></div>
+    </div>
+  </div></section>
+
+  <!-- ABOUT -->
+  <section id="about" style="padding-top:8px"><div class="wrap">
+    <div class="about">
+      <div>
+        <div class="kicker">About your translator</div>
+        <h2 style="font-family:'Newsreader',serif;font-size:36px;line-height:1.05;margin:0 0 12px;letter-spacing:-.02em">Hany Karahjoly</h2>
+        <p style="color:var(--ink-2);margin:0 0 12px">Pharmacist first, translator second — in that order, on purpose. Anyone can translate words; a pharmacist knows which Arabic term a patient, a doctor and a regulator each expect to read.</p>
+        <p style="color:var(--ink-2);margin:0">Based in Damascus, working remotely for clients and agencies online. Fluent English ↔ Modern Standard Arabic, with Levantine localisation when the audience needs it.</p>
+        <div class="trust" style="margin-top:16px">
+          <span>EN ↔ AR · MSA &amp; Levantine</span><span>Kobo · ActivityInfo · SPSS</span><span>MS Office</span>
+        </div>
+      </div>
+      <div class="card" style="padding:8px 22px">
+        <div class="timeline">
+          <div class="tl"><time>2026 —</time><div><strong>Communication &amp; Information Management Officer — Syrian Arab Red Crescent</strong><span>Reporting &amp; IM across 14 centres, Humanitarian Support Program, Damascus HQ.</span></div></div>
+          <div class="tl"><time>2026</time><div><strong>Master's in Bioinformatics</strong><span>Health-data analysis on top of the pharmacy foundation.</span></div></div>
+          <div class="tl"><time>2024–26</time><div><strong>Quality &amp; Analysis Lead — Almadallah Healthcare, Dubai</strong><span>Healthcare quality and analysis, after a senior contact-centre role.</span></div></div>
+          <div class="tl"><time>2019–24</time><div><strong>Community Pharmacist — Dummar Medical Center, Damascus</strong><span>140+ prescriptions a day — five years of patient-facing medical Arabic, daily.</span></div></div>
+          <div class="tl"><time>2019</time><div><strong>Bachelor of Pharmacy (BPharm)</strong><span>The credential behind every medical translation.</span></div></div>
+        </div>
+      </div>
+    </div>
+  </div></section>
+
+  <!-- MY OWN TRANSLATOR CV & RESUME -->
+  <section id="mycv" style="padding-top:8px"><div class="wrap">
+    <div class="sec-head">
+      <div class="kicker">For agencies &amp; clients</div>
+      <h2>My Translator CV — and the one-page Resume version.</h2>
+      <p>Applying to an agency or sending this to a client? This is my own CV, written for translation work. The full CV has the detail; the Resume is the one-page short version. Download either as a text file and attach it anywhere.</p>
+    </div>
+    <div class="cv-tabs" role="tablist" aria-label="CV version">
+      <button type="button" class="cv-tab active" id="tabFull">Full Translator CV</button>
+      <button type="button" class="cv-tab" id="tabShort">One-Page Resume</button>
+      <button type="button" class="btn btn-secondary" id="dlCv" style="margin-left:auto">⬇ Download this version (.txt)</button>
+    </div>
+
+    <div class="cv-doc" id="cvFull">
+      <h3>Hany Karahjoly</h3>
+      <p style="margin:0;font-weight:700;color:var(--ink)">English ↔ Arabic Medical &amp; Pharmaceutical Translator · Proofreader</p>
+      <p style="margin:4px 0 0">Damascus, Syria · Working remotely worldwide · Hanykarahjoli@gmail.com<br>Rates: Translation $0.10 / word · Proofreading &amp; editing $0.05 / word</p>
+      <h4>Profile</h4>
+      <p>Pharmacist (BPharm, 2019) and Master's graduate in Bioinformatics (2026) specialising in English → Arabic and Arabic → English translation of medical, pharmaceutical and life-sciences content, plus humanitarian reporting. Five years of patient-facing pharmacy practice and current information-management work for a national humanitarian programme give me the subject knowledge to translate drug, clinical and public-health terminology accurately — not literally.</p>
+      <h4>Translation Services &amp; Specialisms</h4>
+      <ul>
+        <li>Patient information leaflets (PILs), Summaries of Product Characteristics (SmPC), pharmacy &amp; clinical documents</li>
+        <li>Medical and public-health articles, presentations and training materials</li>
+        <li>Humanitarian / NGO reports — Protection, GBV, MHPSS, PSEA, Legal Assistance, Livelihoods</li>
+        <li>Proofreading &amp; editing of Arabic and English medical text; MSA and Levantine localisation</li>
+        <li>CV &amp; resume writing (English, Arabic, bilingual)</li>
+      </ul>
+      <h4>Professional Experience</h4>
+      <ul>
+        <li><strong>Communication &amp; Information Management Officer — Syrian Arab Red Crescent, Damascus HQ (Jun 2026 – present).</strong> Reporting and information management across 14 centres for the Humanitarian Support Program; ActivityInfo / UNHCR tools, data quality and analysis across Protection, GBV, MHPSS, PSEA, Legal Assistance and Livelihoods.</li>
+        <li><strong>Quality and Analysis Lead — Almadallah Healthcare Management, Dubai (Sep 2025 – Jan 2026)</strong>, previously Contact Center Senior Agent (Apr 2024 – Sep 2025).</li>
+        <li><strong>Community Pharmacist — Dummar Medical Center, Damascus (Sep 2019 – Feb 2024).</strong> Processed 140+ prescriptions per day; contributed to raising pharmacy sales and gross margins by 17%.</li>
+      </ul>
+      <h4>Education</h4>
+      <ul><li>Master's in Bioinformatics — 2026</li><li>Bachelor of Pharmacy (BPharm) — 2019</li></ul>
+      <h4>Skills &amp; Tools</h4>
+      <ul><li>Data management &amp; analysis, reporting coordination, MEAL / monitoring, needs assessment</li><li>MS Office, IBM SPSS, Kobo Toolbox, ActivityInfo</li><li>Online research, terminology research (human-verified)</li></ul>
+      <h4>Languages</h4>
+      <ul><li>Arabic — Native (Modern Standard Arabic &amp; Levantine)</li><li>English — Fluent</li></ul>
+      <h4>Volunteering</h4>
+      <ul><li>Community outreach, Dummar Medical Center (2022–2023) — Children's Health Awareness Events reaching 90+ school-age children.</li></ul>
+    </div>
+
+    <div class="cv-doc" id="cvShort" hidden>
+      <h3>Hany Karahjoly — Resume</h3>
+      <p style="margin:0;font-weight:700;color:var(--ink)">EN ↔ AR Medical / Pharma Translator · $0.10/word · Proofreading $0.05/word</p>
+      <p style="margin:4px 0 0">Damascus · Remote worldwide · Hanykarahjoli@gmail.com</p>
+      <h4>In one line</h4>
+      <p>Pharmacist-translator: BPharm (2019) + MSc Bioinformatics (2026), translating leaflets, clinical and humanitarian documents between English and Arabic with clinician-level terminology.</p>
+      <h4>Now</h4>
+      <ul><li>Communication &amp; Information Management Officer, Syrian Arab Red Crescent — reporting / IM across 14 centres (2026–present)</li></ul>
+      <h4>Before</h4>
+      <ul>
+        <li>Quality &amp; Analysis Lead, Almadallah Healthcare, Dubai (2025–2026)</li>
+        <li>Community Pharmacist, Dummar Medical Center, Damascus — 140+ prescriptions/day (2019–2024)</li>
+      </ul>
+      <h4>Best for</h4>
+      <ul><li>PILs &amp; SmPCs · Clinical &amp; public-health texts · NGO reports (Protection, GBV, MHPSS) · Proofreading · CV writing</li></ul>
+      <h4>Languages &amp; tools</h4>
+      <ul><li>Arabic (native) ↔ English (fluent) · MS Office · SPSS · Kobo Toolbox · ActivityInfo</li></ul>
+    </div>
+  </div></section>
+
+  <!-- FAQ -->
+  <section style="padding-top:8px"><div class="wrap" style="max-width:820px">
+    <div class="sec-head"><div class="kicker">Questions</div><h2>Before you ask</h2></div>
+    <details><summary>Do you use machine translation?</summary><p>No raw machine output is ever delivered. I translate as a human, use my own pharma termbase for consistency, and proofread every job as a separate second pass. That's the whole point of hiring a pharmacist.</p></details>
+    <details><summary>How do I count my words?</summary><p>In Word: Review → Word Count. Or skip it — send the file with your request and I'll count and quote it for free. A normal page is roughly 250 words.</p></details>
+    <details><summary>How do I pay from outside Syria / how do I get paid issues?</summary><p>Payment method is agreed in writing before work starts, based on what works in your country — I'll lay out the options in my quote reply so there are no surprises for either side.</p></details>
+    <details><summary>Is my document confidential?</summary><p>Yes. Client files are never published, shared, or used as samples. Published samples on request are anonymised excerpts only, shared privately with your quote.</p></details>
+    <details><summary>Can you do a certified / sworn translation?</summary><p>I provide accurate professional translation. If you need a sworn stamp for a court or ministry, tell me in your request — I'll tell you honestly whether your document needs a licensed sworn translator instead.</p></details>
+  </div></section>
+
+  <!-- ORDER -->
+  <section id="order" style="padding-top:8px"><div class="wrap">
+    <div class="sec-head">
+      <div class="kicker">Start a project</div>
+      <h2>Request a quote</h2>
+      <p>Fill this in and tap “Open in email” — it prepares a ready-to-send email to me with everything filled in. Attach your document to that email before sending.</p>
+    </div>
+    <div class="order-grid">
+      <form class="form-card" id="orderForm" onsubmit="return false">
+        <div class="form-grid">
+          <div class="field"><label for="fName">Your name *</label><input id="fName" type="text" placeholder="e.g. Sara Haddad" required></div>
+          <div class="field"><label for="fEmail">Your email *</label><input id="fEmail" type="email" placeholder="you@example.com" required></div>
+          <div class="field"><label for="fService">I need</label>
+            <select id="fService">
+              <option>Medical / Pharma Translation</option>
+              <option>General / NGO Translation</option>
+              <option>Proofreading &amp; Editing</option>
+              <option>CV — Essential ($25)</option>
+              <option selected>CV — Professional ($40)</option>
+              <option>CV — Complete Application ($55)</option>
+              <option>Something else</option>
+            </select>
+          </div>
+          <div class="field"><label for="fDeadline">Deadline</label><input id="fDeadline" type="text" placeholder="e.g. Thursday, or “flexible”"></div>
+          <div class="field full"><label for="fDetails">About the job *</label><textarea id="fDetails" placeholder="For translation: language direction, word count / pages, what the document is. For a CV: your current role, the job you want, and whether you have an old CV to send."></textarea></div>
+        </div>
+        <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:6px">
+          <button type="button" class="btn btn-primary" id="sendBtn" style="flex:1;min-width:200px">Open in email &amp; send →</button>
+          <button type="button" class="btn btn-secondary" id="copyBtn">Copy this brief</button>
+        </div>
+        <p class="status" id="formStatus" role="status"></p>
+        <p style="font-size:12.5px;color:var(--muted);margin:4px 0 0">This page has no server — nothing is stored here. Your request only leaves your device when you send the email.</p>
+      </form>
+      <aside class="side-card">
+        <h3>Direct contact</h3>
+        <p>Prefer plain email? Write to me directly and attach your file:</p>
+        <p><a href="mailto:Hanykarahjoli@gmail.com">Hanykarahjoli@gmail.com</a></p>
+        <ul style="padding-left:18px">
+          <li>Replies within 24 hours, usually much faster in the evening (Damascus time)</li>
+          <li>Quote is free and final — no obligation</li>
+          <li>Files accepted: Word, PDF, Excel, PowerPoint, photos of documents</li>
+        </ul>
+        <p style="margin-bottom:0"><strong id="sideEstimate">Last estimate: $100</strong><br><span style="font-size:13px">Use the calculator above and it will appear here and in your email.</span></p>
+      </aside>
+    </div>
+  </div></section>
+</main>
+
+<footer><div class="wrap footer-flex">
+  <span>© 2026 Hany Karahjoly — EN ↔ AR Medical Translation &amp; CV Writing · Damascus, working worldwide</span>
+  <span><a href="#top">Back to top ↑</a></span>
+</div></footer>
+
+<script>
+(function(){
+  var rates={medical:0.10,general:0.07,proof:0.05};
+  var flats={"cv-essential":25,"cv-pro":40,"cv-exec":55};
+  var labels={medical:"Medical / Pharma Translation",general:"General / NGO Translation",proof:"Proofreading & Editing","cv-essential":"CV — Essential","cv-pro":"CV — Professional","cv-exec":"CV — Complete Application"};
+  var svc=document.getElementById('svc'), words=document.getElementById('words'), range=document.getElementById('wordsRange'),
+      wordsLabel=document.getElementById('wordsLabel'), wordsField=document.getElementById('wordsField'),
+      total=document.getElementById('total'), summary=document.getElementById('summary'),
+      baseLine=document.getElementById('baseLine'), speedLine=document.getElementById('speedLine'),
+      sideEstimate=document.getElementById('sideEstimate');
+  var speedMult=1, speedName="Standard", dir="EN → AR", lastTotal=100, lastSummary="";
+
+  function fmt(n){return "$"+ (Math.round(n*100)/100).toLocaleString('en-US',{minimumFractionDigits:0,maximumFractionDigits:2});}
+  function calc(){
+    var v=svc.value, w=Math.max(0, parseInt(words.value||"0",10)||0);
+    var isFlat = v in flats;
+    wordsField.style.display = isFlat ? "none" : "";
+    var base = isFlat ? flats[v] : Math.max(15, w*rates[v]);
+    var t = base*speedMult;
+    lastTotal=t; 
+    lastSummary = labels[v] + (isFlat ? "" : " · "+w.toLocaleString()+" words") + " · "+speedName+" · "+dir;
+    total.textContent = fmt(t);
+    summary.textContent = lastSummary;
+    baseLine.textContent = fmt(base) + (isFlat ? " (flat)" : "");
+    speedLine.textContent = speedMult===1 ? "—" : (speedMult>1 ? "+30% express" : "−10% flexible");
+    if(sideEstimate) sideEstimate.textContent = "Last estimate: "+fmt(t)+" — "+lastSummary;
+    wordsLabel.textContent = w.toLocaleString()+" words";
+  }
+  svc.addEventListener('change',calc);
+  words.addEventListener('input',function(){ range.value=Math.min(10000,Math.max(250,parseInt(words.value||"250",10)||250)); calc(); });
+  range.addEventListener('input',function(){ words.value=range.value; calc(); });
+
+  function segWire(id, fn){
+    var box=document.getElementById(id);
+    box.addEventListener('click',function(e){
+      var b=e.target.closest('.seg'); if(!b) return;
+      box.querySelectorAll('.seg').forEach(function(s){s.classList.remove('active')});
+      b.classList.add('active'); fn(b); calc();
+    });
+  }
+  segWire('speedSeg',function(b){ speedMult=parseFloat(b.dataset.mult); speedName=b.textContent.trim().split(/\s+/)[0]; });
+  segWire('dirSeg',function(b){ dir=b.dataset.dir; });
+  calc();
+
+  // Package buttons pre-select the form service
+  document.querySelectorAll('[data-pick]').forEach(function(a){
+    a.addEventListener('click',function(){
+      var sel=document.getElementById('fService');
+      for(var i=0;i<sel.options.length;i++){ if(sel.options[i].text===a.dataset.pick) sel.selectedIndex=i; }
+    });
+  });
+  document.getElementById('useEstimate').addEventListener('click',function(){
+    var d=document.getElementById('fDetails');
+    if(!d.value) d.value="Estimate from the calculator: "+lastSummary+" — approx. "+fmt(lastTotal)+".\n\n";
+  });
+
+  function buildBrief(){
+    var name=document.getElementById('fName').value.trim(),
+        email=document.getElementById('fEmail').value.trim(),
+        service=document.getElementById('fService').value,
+        deadline=document.getElementById('fDeadline').value.trim(),
+        details=document.getElementById('fDetails').value.trim();
+    var body="Name: "+name+"\nEmail: "+email+"\nService: "+service+"\nDeadline: "+(deadline||"Flexible")+"\nCalculator estimate: "+fmt(lastTotal)+" ("+lastSummary+")\n\nAbout the job:\n"+details+"\n\n[Please attach your document / old CV to this email before sending.]";
+    return {name:name,email:email,service:service,body:body};
+  }
+  var status=document.getElementById('formStatus');
+  document.getElementById('sendBtn').addEventListener('click',function(){
+    var b=buildBrief();
+    if(!b.name||!b.email){ status.textContent="Please add your name and email first."; status.style.color="#b42318"; return; }
+    var subject=encodeURIComponent("Quote request — "+b.service+" — "+b.name);
+    var a=document.createElement('a');
+    a.href="mailto:Hanykarahjoli@gmail.com?subject="+subject+"&body="+encodeURIComponent(b.body);
+    document.body.appendChild(a); a.click(); a.remove();
+    status.textContent="Your email app should open with everything filled in — just attach your file and press send.";
+    status.style.color="var(--accent)";
+  });
+  // My CV tabs + download
+  var cvMode='full';
+  var tabFull=document.getElementById('tabFull'), tabShort=document.getElementById('tabShort');
+  function showCv(mode){
+    cvMode=mode;
+    document.getElementById('cvFull').hidden = mode!=='full';
+    document.getElementById('cvShort').hidden = mode!=='short';
+    tabFull.classList.toggle('active', mode==='full');
+    tabShort.classList.toggle('active', mode==='short');
+  }
+  if(tabFull){ tabFull.addEventListener('click',function(){showCv('full')}); tabShort.addEventListener('click',function(){showCv('short')}); }
+  var dl=document.getElementById('dlCv');
+  if(dl) dl.addEventListener('click',function(){
+    var el=document.getElementById(cvMode==='full'?'cvFull':'cvShort');
+    var text=el.innerText.trim();
+    var blob=new Blob([text],{type:'text/plain;charset=utf-8'});
+    var u=URL.createObjectURL(blob);
+    var a=document.createElement('a'); a.href=u; a.download=(cvMode==='full'?'Hany-Karahjoly-Translator-CV.txt':'Hany-Karahjoly-Translator-Resume.txt');
+    document.body.appendChild(a); a.click(); a.remove();
+    setTimeout(function(){URL.revokeObjectURL(u)},2000);
+  });
+
+  document.getElementById('copyBtn').addEventListener('click',function(){
+    var b=buildBrief();
+    var text="To: Hanykarahjoli@gmail.com\nSubject: Quote request — "+b.service+" — "+b.name+"\n\n"+b.body;
+    if(navigator.clipboard&&navigator.clipboard.writeText){
+      navigator.clipboard.writeText(text).then(function(){ status.textContent="Brief copied — paste it into any email or message."; status.style.color="var(--accent)"; });
+    } else {
+      status.textContent="Copy not available in this browser — use “Open in email” instead.";
+    }
+  });
+})();
+</script>
+</body>
+</html>
